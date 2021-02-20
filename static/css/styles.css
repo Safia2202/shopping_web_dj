@@ -1,0 +1,547 @@
+:root{
+  --mainColor:#eaeaea;
+  --secondaryColor:#fff;
+
+  --borderColor:#c1c1c1;
+
+  --mainText:black;
+  --secondaryText:#4b5156;
+
+  --themeDotBorder:#24292e;
+
+  --previewBg:rgb(251, 249, 243, 0.8);
+  --previewShadow:#f0ead6;
+
+
+  --buttonColor:black;
+
+
+}
+
+html,body {
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+  font-family: "Lato", sans-serif;
+  color: var(--mainText);
+  font-weight: 500;
+}
+
+p, li, span, label, input, textarea{
+  color: var(--secondaryText);
+  font-family: 'Roboto Mono', monospace;
+}
+
+a{
+  text-decoration: none;
+  color:#17a2b8;
+}
+
+ul{
+  list-style: none;
+}
+
+h1 { font-size: 56px;}
+h2 { 
+  font-size: 36px;
+  text-align: center;
+    }
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+
+.s0 {
+  background-color: var(--secondaryColor);
+  border-bottom: 1px solid ;
+  overflow:auto;
+}
+
+.s1{
+  background-color: var(--mainColor);
+  border-bottom:1px solid var(--borderColor);
+  overflow:auto;
+}
+
+.s2{
+  background-color: var(--secondaryColor);
+  border-bottom:1px solid var(--borderColor);
+  overflow:auto;
+
+}
+.heading_content {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+.heading_row {
+  display: grid;
+
+}
+
+.content-row {
+  display: grid;
+  padding: 20px;
+  text-transform:none;
+  text-align: center;
+
+}
+
+.quote {
+  display: grid;
+  padding-top: 20px;
+  text-transform: none;
+  text-align: center;
+}
+
+.sign-up-search {
+  display: flex;
+  padding-top: 0px;
+  text-transform: none;
+}
+
+.sign-up-padding {
+  float: right;
+  display:flex;
+  padding-top: 20px;
+  text-transform: none;
+}
+
+
+
+.form-example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+
+.button-sign-up {
+  width:30%;
+  margin-left:40%;
+  margin-right:30%;
+  text-align: justify;
+  background-color:grey;
+  border-radius:28px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:white;
+  font-family:Arial;
+  font-size:20px;
+  padding:13px 45px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px ;
+}
+.button-sign-up:hover {
+  background-color:#5cbf2a;
+}
+.button-sign-up:active {
+  position:relative;
+  top:1px;
+}
+
+.form-example button {
+  display: inline;
+  margin: auto;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.form-example button:hover {
+  background: #0b7dda;
+}
+
+.form-example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.img-text-wrapper:hover .subtitle {
+  color: lightseagreen;
+  font-weight: 600;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+}
+
+
+.box-element{
+  box-shadow:hsl(0, 0%, 80%) 0 0 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.product{
+  border-radius: 0 0 4px 4px;
+} 
+
+.thumbnail{
+  width: 100%;
+  height: 200px;
+  -webkit-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+  -moz-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+  box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+}
+
+.col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
+  margin-top: 10px;
+}
+.footer {
+  padding-top: 0;
+  background-color: grey;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+}
+
+/* Full-width input fields */
+.signup input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.signup input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.signup button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.signup button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn .signupbtn {
+  padding: 14px 20px;
+  background-color: #0099ff;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/*form*/
+.form_outline{
+  display: grid;
+  margin: 50px 400px;
+  
+
+}
+
+
+.login_form input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login_form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login_form button:hover {
+  opacity: 0.8;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.form_container {
+  padding: 0;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+
+
+.bg-dark{
+  background-color: #4f868c!important;
+}
+
+#cart-icon{
+  width:25px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#cart-total{
+  display: block;
+  text-align: center;
+  color:white;
+  background-color: white;
+  width: 20px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
+  margin-top: 10px;
+}
+
+
+.box-element{
+  box-shadow:hsl(0, 0%, 80%) 0 0 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+}
+.btn{
+  border-radius: 0;
+}
+
+.row-image{
+  width: 30%;
+
+
+}
+
+.form-field{
+  width:250px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.cart-row{
+  display: flex; 
+  float: right;
+  align-items: flex-stretch;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+
+}
+
+.quantity{
+  display: inline-block;
+  font-weight: 700;
+  padding-right:10px;
+  
+
+}
+
+.chg-quantity{
+  height:  15px;
+  width: 30px;
+  cursor: pointer;
+  display: block;
+  margin-top: 5px;
+  transition:.1s;
+}
+
+.chg-quantity:hover{
+  opacity: .6;
+}
+
+
+.hidden{
+  display: none!important;
+}
+
+.heading_row{
+  display: grid;
+  float: right;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  grid-gap: 10px;
+  padding:10px;
+}
+
+.box-size {
+  background-color: #fff;
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+
+}
+.box-container{
+  margin: 0
+}
+
+.cart-info{
+  display: :flex;
+  margin: 0;
+  padding: 0;
+}
