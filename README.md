@@ -1,0 +1,1 @@
+# shopping_web_dj
