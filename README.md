@@ -1,1 +1,1 @@
-# shopping_web_dj
+# shopping_web_django
